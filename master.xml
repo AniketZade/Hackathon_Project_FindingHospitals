@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Suite">
+
+	<groups>
+  	<run>
+  	<include name="master" />
+  	<!--<include name="sanity"/>-->
+  	<!--<include name="regression" />
+  	<include name="smoke" />-->
+  	</run>
+  	</groups>
+  	
+	<listeners>
+		<listener class-name="Utilities.ExtentReportManager"></listener>
+	</listeners>
+	
+
+  <test name="ChromeTest" thread-count="5" >
+  <parameter name="browser" value ="chrome"/>
+  <parameter name="os" value ="windows"/>
+    <classes>
+      <class name="TestCases.TC_001_FindDoctors"/>
+      <class name="TestCases.TC_002_PopularSurgeries"/>
+      <class name="TestCases.TC_003_HealthandWellness"/>
+      
+      <!--<class name="TestCases.TestCases"/>-->
+    </classes>
+  </test> <!-- Test -->
+</suite> <!-- Suite -->

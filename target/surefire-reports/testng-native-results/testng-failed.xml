@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [Surefire suite]" verbose="0">
+  <test thread-count="5" name="Surefire test(failed)" verbose="0">
+    <classes>
+      <class name="TestCases.TestCases">
+        <methods>
+          <include name="TC_09_extractDoctorDetails"/>
+          <include name="TC_013_verifywithValidInfo"/>
+          <include name="setupDriver"/>
+          <include name="TC_004_searchSpecialityDentist"/>
+          <include name="TC_010_displayAllSurgeries"/>
+          <include name="TC_002_verifyFindDoctorbtn"/>
+          <include name="TC_007_selectFeesandAvailability"/>
+          <include name="TC_008_selectRelevance"/>
+          <include name="TC_001_verifyPractoPage"/>
+          <include name="TC_003_searchCity"/>
+          <include name="TC_005_selectPatientStory"/>
+          <include name="TC_011_verifywithInavlidPhoneNumber"/>
+          <include name="TC_012_verifywithInvalidEmailId"/>
+          <include name="TC_006_selectExperience"/>
+          <include name="tearDown"/>
+        </methods>
+      </class> <!-- TestCases.TestCases -->
+    </classes>
+  </test> <!-- Surefire test(failed) -->
+</suite> <!-- Failed suite [Surefire suite] -->
